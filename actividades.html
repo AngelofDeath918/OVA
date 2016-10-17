@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link href='http://fonts.googleapis.com/css?family=arial' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/crucigramStyle.css">
 </head>
 <body>
  <Div id="contenidos">
@@ -51,14 +52,14 @@
                 <div id="apDiv19">
                 <center>
                         <div id="cuentavisitas"></div>
-                                                <script>yu=function(id){return document.getElementById(id);}
-                                                        if(localStorage){
-                                                        if(localStorage['visitas']==undefined){
-                                                        localStorage['visitas']=0;
-                                                        }var n=parseInt(localStorage['visitas']);localStorage['visitas']=1+n;
-                                                        var num=localStorage['visitas'];
-                                                        var mensaje=num + " visitas";
-                                                         yu('cuentavisitas').innerHTML=mensaje;}
+                           <script>yu=function(id){return document.getElementById(id);}
+                            if(localStorage){
+                            if(localStorage['visitas']==undefined){
+                            localStorage['visitas']=0;
+                            }var n=parseInt(localStorage['visitas']);localStorage['visitas']=1+n;
+                            var num=localStorage['visitas'];
+                            var mensaje=num + " visitas";
+                            yu('cuentavisitas').innerHTML=mensaje;}
             </script>
                 </center></div>
                 <div id="apDiv4">
@@ -93,16 +94,57 @@
         <h2 id="idCrucigrama">Crucigrama</h2>
         <p>Veamos que tanto conoces de seguridad Informática a travès de este 
           pequeño juego.</p>
-        <figure class="shrink">
+        <!--<figure class="shrink">
           <a href="CrucigramaSeguridadInformatica.htm" target="_blank"><img id="idCrucigramaImg" src="img/crucigrama.jpg" alt="Crucigrama"></a>
 
-        </figure>
+        </figure>-->
 
+      <div id="container">
+       <a href="CrucigramaSeguridadInformatica.htm" target="_blank">
+       <div id="girando">
+        
+          <span id="uno">
+            <figure><img class="tamañoIMG" src="img/crucigrama4.jpg" alt="">
+            </figure>
+          </span>
+        
+          <span id="dos">2</span>
+          <span id="tres">3</span>
+          <span id="cuatro">4</span>
+           <span id="cinco">5</span>
+       </div>
+       </a>
+      </div>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-79823-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script type="text/javascript">
+  function woopraReady(tracker) {
+      tracker.setDomain('csslab.cl');
+      tracker.setIdleTimeout(300000);
+      tracker.track();
+      return false;
+  }
+  (function() {
+      var wsc = document.createElement('script');
+      wsc.src = document.location.protocol+'//static.woopra.com/js/woopra.js';
+      wsc.type = 'text/javascript';
+      wsc.async = true;
+      var ssc = document.getElementsByTagName('script')[0];
+      ssc.parentNode.insertBefore(wsc, ssc);
+  })();
+  </script>
 
-
-      </article>
+ </article>
    
-    </section>
+</section>
     <aside> 
                 <div id="apDiv5">
                 <div id="apDiv11">Nuestra UNAD</div>
