@@ -1,3 +1,8 @@
+/*
+http://www.csslab.cl/ejemplos/css3-avanzado/ejemplo4.html
+ejemplo 4 (blog)
+*/
+
 @-webkit-keyframes girando {<
 from { -webkit-transform: rotateY(0deg);    }
 to   { -webkit-transform: rotateY(360deg); }
