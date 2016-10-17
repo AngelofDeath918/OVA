@@ -1315,6 +1315,8 @@ function StartUp(){
 	CreateStatusArray();
 	
 
+	setTimeout('StartTimer()', 50);
+
 	
 //Check search string for q parameter
 	if (document.location.search.length > 0){
@@ -1620,6 +1622,8 @@ function CheckFinished(){
 		
 		Finished == true;
 
+		window.clearInterval(Interval);
+
 
 
 
@@ -1644,8 +1648,61 @@ function CheckFinished(){
 }
 
 
+function TimesUp(){
+	document.getElementById('Timer').innerHTML = 'Your time is over!';
+
+	TimeOver = true;
+	Finished = true;
+	ShowMessage('Your time is over!');
+	
+//Set all remaining scores to 0
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				State[QNum][0] = 0;
+			}
+		}
+	}
+	CheckFinished();
+}
 
 
+
+
+
+
+
+
+//CODE FOR HANDLING TIMER
+//Timer code
+var Seconds = 180;
+var Interval = null;
+
+function StartTimer(){
+	Interval = window.setInterval('DownTime()',1000);
+	document.getElementById('TimerText').style.display = 'inline';
+}
+
+function DownTime(){
+	var ss = Seconds % 60;
+	if (ss<10){
+		ss='0' + ss + '';
+	}
+
+	var mm = Math.floor(Seconds / 60);
+
+	if (document.getElementById('Timer') == null){
+		return;
+	}
+
+	document.getElementById('TimerText').innerHTML = mm + ':' + ss;
+	if (Seconds < 1){
+		window.clearInterval(Interval);
+		TimeOver = true;
+		TimesUp();
+	}
+	Seconds--;
+}
 
 
 
@@ -1674,6 +1731,8 @@ function CheckFinished(){
 
 	<h3 class="ExerciseSubtitle">Quiz</h3>
 
+
+<div id="Timer"><span id="TimerText">&nbsp;&nbsp;</span></div>
 
 
 </div>
