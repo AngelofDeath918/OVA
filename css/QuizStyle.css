@@ -11,12 +11,13 @@ Efecto 3; (blog)
     float:center;
     margin-right:20px
 }
+
 .imagen-3 figure {
     margin:0;
     padding:10;
     position:relative;
     cursor:pointer;
-    margin-left:-50px
+    margin-left:-20px
 }
 .imagen-3 figure img {
     display:block;
@@ -67,7 +68,9 @@ Efecto 3; (blog)
     backface-visibility:hidden;
     -webkit-transition:all .5s;
     -moz-transition:all .5s;
-    transition:all .5s
+    transition:all .5s;
+    width: 190px;
+    height: 180px
 }
 .imagen-3 figure:hover img,figure.hover img {
     -webkit-transform:rotateY(180deg);

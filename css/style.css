@@ -281,6 +281,14 @@ div {
 	position: relative;
 	color: #000;
 }
+
+#ImgFamilia{
+	width: 500px;
+	height: 290px;
+	margin: center;
+}
+
+
 /*ETIQUETAS*/
 body{
 
@@ -372,6 +380,20 @@ p{
 	text-align: justify;
 }
 
+table{
+	margin: auto;	
+	
+}
+
+td{	
+	font-family: Arial, Helvetica, sans-serif;
+	color: #006680;
+	margin-left: 10px;
+	font-size: 16px;
+	text-align: center;
+	border-top: #006680;
+}
+
 /*CLASES*/
 .ancho_menu_home{width: 900px;}
 .ancho_menu_paginas{width: 970px;}
@@ -415,6 +437,22 @@ display:block;
 	font-size: 20px;
 	text-align: left;
 	border-top: #006680;
+}
+
+.table{
+	margin: auto;
+	border: 1px solid #006680;	
+	
+}
+
+.Td{	width: 240px;
+	height: 40px;
+	border: 3px solid #006680;
+}
+
+.Tr{	width: 240px;
+	height: 40px;
+	border: 3px solid #006680;
 }
 
 /*SEUDO CLASES*/
