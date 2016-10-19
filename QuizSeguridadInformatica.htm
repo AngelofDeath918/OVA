@@ -38,8 +38,8 @@ Crucigrama
 
 body{
 	font-family: Geneva,Arial,sans-serif;
-	background-color: #809eee;
-	color: #000000;
+	background-color: #006680;
+	color: #006680;
  
 	margin-right: 5%;
 	margin-left: 5%;
@@ -54,7 +54,7 @@ p{
 
 table,div,span,td{
 	font-size: 100%;
-	color: #000000;
+	color: #006680;
 }
 
 div.Titles{
@@ -80,14 +80,14 @@ button{
 }
 
 div.StdDiv{
-	background-color: #c1ffe0;
+	background-color: #FFFFFF;
 	text-align: center;
 	font-size: 100%;
-	color: #000000;
+	color: #006680;
 	padding: 0.5em;
 	border-style: solid;
 	border-width: 1px 1px 1px 1px;
-	border-color: #000000;
+	border-color: #006680;
 	margin-bottom: 1px;
 }
 
@@ -157,14 +157,14 @@ div.ExerciseText{
 
 .LeftItem{
 	font-size: 100%;
-	color: #000000;
+	color: #006680;
 	text-align: left;
 }
 
 .RightItem{
 	font-weight: bold;
 	font-size: 100%;
-	color: #000000;
+	color: #006680;
 }
 
 span.CorrectMark{
@@ -181,7 +181,7 @@ select{
 }
 
 div.Feedback {
-	background-color: #809eee;
+	background-color: #006680;
 	left: 33%;
 	width: 34%;
 	top: 33%;
@@ -200,14 +200,14 @@ div.Feedback {
 
 
 div.ExerciseDiv{
-	color: #000000;
+	color: #006680;
 }
 
 /* JMatch flashcard styles */
 table.FlashcardTable{
 	background-color: transparent;
-	color: #000000;
-	border-color: #000000;
+	color: #006680;
+	border-color: #006680;
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-top: 2em;
@@ -222,7 +222,7 @@ table.FlashcardTable tr{
 	border-style: none;
 	margin: 0px;
 	padding: 0px;
-	background-color: #c1ffe0;
+	background-color: #FFFFFF;
 }
 
 table.FlashcardTable td.Showing{
@@ -234,8 +234,8 @@ table.FlashcardTable td.Showing{
 	margin: 0px;
 	border-style: solid;
 	border-width: 1px;
-	color: #000000;
-	background-color: #c1ffe0;
+	color: #006680;
+	background-color: #FFFFFF;
 }
 
 table.FlashcardTable td.Hidden{
@@ -253,7 +253,7 @@ a.ExSegment{
 	font-size: 120%;
 	font-weight: bold;
 	text-decoration: none;
-	color: #000000;
+	color: #006680;
 }
 
 span.RemainingWordList{
@@ -472,12 +472,12 @@ div.ShortAnswer{
 	text-align: center;
 	border-style: solid;
 
-	border-left-color: #e0ffef;
-	border-top-color: #e0ffef;
-	border-right-color: #607f70;
-	border-bottom-color: #607f70;
-	color: #000000;
-	background-color: #c1ffe0;
+	border-left-color: #ffffff;
+	border-top-color: #ffffff;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+	color: #006680;
+	background-color: #FFFFFF;
 
 	border-width: 2px;
 	padding: 3px 6px 3px 6px;
@@ -485,33 +485,33 @@ div.ShortAnswer{
 }
 
 .FuncButtonUp {
-	color: #c1ffe0;
+	color: #FFFFFF;
 	text-align: center;
 	border-style: solid;
 
-	border-left-color: #e0ffef;
-	border-top-color: #e0ffef;
-	border-right-color: #607f70;
-	border-bottom-color: #607f70;
+	border-left-color: #ffffff;
+	border-top-color: #ffffff;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
 
-	background-color: #000000;
-	color: #c1ffe0;
+	background-color: #006680;
+	color: #FFFFFF;
 	border-width: 2px;
 	padding: 3px 6px 3px 6px;
 	cursor: pointer;
 }
 
 .FuncButtonDown {
-	color: #c1ffe0;
+	color: #FFFFFF;
 	text-align: center;
 	border-style: solid;
 
-	border-left-color: #607f70;
-	border-top-color: #607f70;
-	border-right-color: #e0ffef;
-	border-bottom-color: #e0ffef;
-	background-color: #000000;
-	color: #c1ffe0;
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #ffffff;
+	border-bottom-color: #ffffff;
+	background-color: #006680;
+	color: #FFFFFF;
 
 	border-width: 2px;
 	padding: 3px 6px 3px 6px;
@@ -591,8 +591,8 @@ div.CardStyle {
 	padding: 5px;
 	border-style: solid;
 	border-width: 1px;
-	color: #000000;
-	background-color: #c1ffe0;
+	color: #006680;
+	background-color: #FFFFFF;
 	left: -50px;
 	top: -50px;
 	overflow: visible;
@@ -1315,8 +1315,6 @@ function StartUp(){
 	CreateStatusArray();
 	
 
-	setTimeout('StartTimer()', 50);
-
 	
 //Check search string for q parameter
 	if (document.location.search.length > 0){
@@ -1622,8 +1620,6 @@ function CheckFinished(){
 		
 		Finished == true;
 
-		window.clearInterval(Interval);
-
 
 
 
@@ -1648,61 +1644,8 @@ function CheckFinished(){
 }
 
 
-function TimesUp(){
-	document.getElementById('Timer').innerHTML = 'Your time is over!';
-
-	TimeOver = true;
-	Finished = true;
-	ShowMessage('Your time is over!');
-	
-//Set all remaining scores to 0
-	for (var QNum=0; QNum<State.length; QNum++){
-		if (State[QNum] != null){
-			if (State[QNum][0] < 0){
-				State[QNum][0] = 0;
-			}
-		}
-	}
-	CheckFinished();
-}
 
 
-
-
-
-
-
-
-//CODE FOR HANDLING TIMER
-//Timer code
-var Seconds = 180;
-var Interval = null;
-
-function StartTimer(){
-	Interval = window.setInterval('DownTime()',1000);
-	document.getElementById('TimerText').style.display = 'inline';
-}
-
-function DownTime(){
-	var ss = Seconds % 60;
-	if (ss<10){
-		ss='0' + ss + '';
-	}
-
-	var mm = Math.floor(Seconds / 60);
-
-	if (document.getElementById('Timer') == null){
-		return;
-	}
-
-	document.getElementById('TimerText').innerHTML = mm + ':' + ss;
-	if (Seconds < 1){
-		window.clearInterval(Interval);
-		TimeOver = true;
-		TimesUp();
-	}
-	Seconds--;
-}
 
 
 
@@ -1731,8 +1674,6 @@ function DownTime(){
 
 	<h3 class="ExerciseSubtitle">Quiz</h3>
 
-
-<div id="Timer"><span id="TimerText">&nbsp;&nbsp;</span></div>
 
 
 </div>
