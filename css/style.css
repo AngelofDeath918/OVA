@@ -455,11 +455,80 @@ display:block;
 	border: 3px solid #006680;
 }
 
+
+.apDiv29 {
+	
+	width: 400px;
+	height: 220px;
+	
+}
+
+#apDiv30 {
+	
+	width: 320px;
+	height: 180px;
+	
+}
+
+.iframe{
+	width: 500px;
+	height: 300px;
+}
+
 /*SEUDO CLASES*/
 p {
 	font-size: 14px;
 	font-weight: normal;
 	color: #333;
 }
+
+
+
+
+/*CLASES para Menu2*/
+.ancho_menu2_home{width: 900px;}
+.ancho_menu2_paginas{width: 970px;}
+.menu2:link{
+	color: #FFF;
+	text-decoration: none;
+	
+}
+.menu2:visited{
+	color: #FFF;
+	text-decoration: none;
+	
+}
+.menu2:hover{
+	color: #FF6600;
+	text-decoration: none;
+	text-shadow: 0 0 13px white;
+}
+.menu2:active{
+	color: #003F5E;
+	text-decoration: none;
+}
+
+.menu2 > li {
+float:center;
+
+}
+
+.menu2 li ul {
+display:none;
+position:absolute;
+min-width:140px;
+
+}
+
+.menu2 li:hover > ul {
+display:block;
+}
+
+.class body nav .menu2 #apDiv3 form {
+	font-size: 12px;
+	
+}
+
+
 
 
